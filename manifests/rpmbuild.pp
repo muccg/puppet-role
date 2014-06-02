@@ -1,5 +1,5 @@
 #
-class role::rpmbuild extends role {
+class role::rpmbuild inherits role {
   include profile::rpmbuild
   include profile::python
 }
