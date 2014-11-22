@@ -1,4 +1,4 @@
 #
-class role::sydney-puppet-client inherits role {
+class role::sydney-puppet-client {
   include profile::sydney-puppet-client
 }
