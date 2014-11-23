@@ -5,5 +5,7 @@ class role::rpmbuild inherits role {
 }
 
 class role::rpmbuild::sydney inherits role::rpmbuild {
-  include profile::sydney
+  class { 'profile::sydney':
+    puppet_runmode => 'none'
+  }
 }
